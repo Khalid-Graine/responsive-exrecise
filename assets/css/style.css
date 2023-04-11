@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, 'Segoe UI',  sans-serif;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+h1 {
+ text-align: center;
+ margin-bottom: 20px;
+}
+
+.second-parent ,
+.third-parent {
+  margin-top: 70px ;
+}
+.first-parent ,
+.third-parent {
+  background-color:#f1f1f1;
+}
+.first-parent .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(400px , 1fr));
+  gap: 20px;
+  align-items:baseline;
+}
+.box-one ,
+.box-two {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    text-align: center;
+}
+.first-parent .container h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.img-one {
+    width: 200px;
+}
+.img-two {
+    width: 290px;
+}
+
+/* two */
+.second-parent .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+  gap: 20px;
+  align-items:baseline;
+}
+.second-parent h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.card-one ,
+.card-two ,
+.card-three {
+  text-align: center;
+  margin: 20px;
+
+
+}
+.second-parent .one, 
+.second-parent .two,
+.second-parent .three {
+  width: 170px;
+}
+
+
+/* three */
+.third-parent .container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.third-parent .row {
+  text-align: center;
+  margin: 60px;
+}
+.third-parent h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.third-parent img {
+  width: 190px;
+  background-color: #428bca;
+  padding: 50px;
+  border-radius: 50%;
+}
+.third-parent hr {
+  width: 100%;
+  margin-top: -40px;
+}
+@media (min-width: 768px) {
+  .three-section h1 {
+    margin-bottom: -20px;
+  }
+}
